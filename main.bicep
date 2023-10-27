@@ -1,11 +1,11 @@
 param resourceGroupLocation string = 'eastus'
 
-// module webapp './webapp.bicep' = {
-//   name: 'webappModule'
-//   params: {
-//     webAppName: 'myWebappas345678'
-//   }
-// }
+module webapp './webapp.bicep' = {
+  name: 'webappModule'
+  params: {
+    webAppName: 'myWebappas345678'
+  }
+}
 
 // module database './database.bicep' = {
 //   name: 'databaseModule'
@@ -27,10 +27,26 @@ param resourceGroupLocation string = 'eastus'
 //   }
 // }
 
-module aks './aks.bicep' = {
-  name: 'aksModule'
-  params: {
-    // clusterName: 'myAksCluster'
-    // resourceGroupLocation: resourceGroupLocation
-  }
-}
+// module aks './aks.bicep' = {
+//   name: 'aksModule'
+//   params: {
+//     // clusterName: 'myAksCluster'
+//     // resourceGroupLocation: resourceGroupLocation
+//   }
+// }
+
+// module vm './vm.bicep' = {
+//   name: 'vmModule'
+//   params: {
+//     // vmName: 'myVm'
+//     // resourceGroupLocation: resourceGroupLocation
+//   }
+// }
+
+// module assignment './assignment.bicep' = {
+//   name: 'policyModule'
+//   params: {
+//     // policyName: 'myPolicy'
+//     // resourceGroupLocation: resourceGroupLocation
+//   }
+// }

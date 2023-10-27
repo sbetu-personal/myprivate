@@ -1,8 +1,8 @@
 @description('The name of the SQL logical server.')
-param serverName string 
+param serverName string
 
 @description('The name of the SQL Database.')
-param sqlDBName string 
+param sqlDBName string
 
 @description('Location for all resources.')
 param location string = resourceGroup().location
